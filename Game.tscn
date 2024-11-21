@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://0l44l31k4fyx"]
+
+[ext_resource type="Script" path="res://Game.gd" id="1_0xfm5"]
+[ext_resource type="Texture2D" uid="uid://jhhjtv5o5bqm" path="res://assets/arrow_right_green.png" id="2_wux6u"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_0xfm5")
+
+[node name="ArrowSprite" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("2_wux6u")
+
+[node name="CorrectScoreLabel" type="Label" parent="."]
+offset_left = 853.0
+offset_top = 379.0
+offset_right = 928.0
+offset_bottom = 402.0
+text = "Correct: 0"
+
+[node name="PreviousTimeLabel" type="Label" parent="."]
+offset_left = 874.0
+offset_top = 348.0
+offset_right = 1029.0
+offset_bottom = 371.0
+text = "Previous Time: 0 ms"
+
+[node name="ReactionTimeLabel" type="Label" parent="."]
+offset_left = 908.0
+offset_top = 318.0
+offset_right = 991.0
+offset_bottom = 341.0
+text = "Time: 0 ms"
+
+[node name="StartMessage" type="Label" parent="."]
+offset_left = 878.0
+offset_top = 206.0
+offset_right = 1026.0
+offset_bottom = 229.0
+text = "Press Space to Play"
+
+[node name="IncorrectScoreLabel" type="Label" parent="."]
+offset_left = 974.0
+offset_top = 379.0
+offset_right = 1038.0
+offset_bottom = 402.0
+text = "Incorrect: 0"

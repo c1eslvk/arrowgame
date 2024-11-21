@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://ghhmo364lbdu"]
+
+[ext_resource type="Script" path="res://LoginScreen.gd" id="1_g7gsk"]
+
+[node name="LoginScene" type="Node2D"]
+
+[node name="LoginScreen" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 828.0
+offset_top = 412.0
+offset_right = 1127.0
+offset_bottom = 581.0
+script = ExtResource("1_g7gsk")
+
+[node name="NameInput" type="LineEdit" parent="LoginScreen"]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 20.0
+offset_right = 222.0
+offset_bottom = 52.0
+placeholder_text = "Enter your Name"
+
+[node name="SubmitButton" type="Button" parent="LoginScreen"]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 73.0
+offset_right = 183.0
+offset_bottom = 104.0
+text = "Submit"
+
+[connection signal="pressed" from="LoginScreen/SubmitButton" to="LoginScreen" method="_on_submit_button_pressed"]
